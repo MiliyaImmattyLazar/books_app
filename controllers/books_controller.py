@@ -1,13 +1,19 @@
 from flask import render_template, request, redirect
-from models.book import all_books, get_book, create_book, update_book, delete_book
+from models.book import all_books, get_book, create_book, update_book, delete_book,title_book
+from models.review import get_reviews
 from services.sessions_info import current_user
 
 def index():
   books = all_books()
   return render_template('books/index.html', books=books, current_user=current_user)
+def title(title):
+  book = title_book(title)
+  reviews= get_reviews(title)
+  return render_template('books/title.html', book=book ,reviews=reviews)
 
 def new():
   return render_template('books/new.html')
+
 
 def create():
   title = request.form.get('title')
@@ -32,3 +38,11 @@ def update(id):
 def delete(id):
   delete_book(id)
   return redirect('/')
+
+
+
+
+  
+
+
+  

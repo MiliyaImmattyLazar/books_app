@@ -2,19 +2,20 @@
 
 {% block content %}
 <h1>Sign up</h1>
-<form action="/users" method="POST">
+<form action="/users" method="POST" class="signup">
   <label for="">First Name:</label>
-  <input type="text" name="first_name">
+  <input type="text" name="first_name" placeholder="Enter first name">
 
   <label for="">Last Name:</label>
-  <input type="text" name="last_name">
+  <input type="text" name="last_name" placeholder="Enter last name">
 
   <label for="">Email:</label>
-  <input type="text" name="email">
+  <input type="text" name="email" placeholder="Enter Email">
+  
 
   <label for="">Password:</label>
   <input type="password" name="password">
 
-  <button>Sign up</button>
+  <button class="signupbtn">Sign up</button>
 </form>
 {% endblock %}

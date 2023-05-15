@@ -15,3 +15,8 @@ def update_book(id, title, image_url,author_name,published_year):
 
 def delete_book(id):
   sql('DELETE FROM books WHERE id=%s RETURNING *', [id])
+
+def title_book(title):
+  books = sql("SELECT * FROM books WHERE title= %s", [title])
+  return books[0]
+

@@ -17,30 +17,22 @@
 <section class="books">
   {% for book in books: %}
   <section class="book">
-    <header>
-     <h2> <a href="/books/new_page">{{ book['title'] }}</a></h2>
-   
-
-      <!-- <section class="controls">
-        <a href="/books/{{ book['id'] }}/edit">Edit</a>
-
-        <form action="/books/{{ book['id'] }}/delete" method="POST">
-          <button>Delete</button>
-        </form>
-
-      </section> -->
+    <header><h2> {{ book['title'] }}</h2>
     </header>
-    <img src ="{{ book['image_url'] }}">
-    <!-- <a href="{{ book['image_url'] }}"></a> -->
-    <h2>{{ book['author_name'] }}</h2>
-    <h2>{{ book['published_year'] }}</h2>
-    
+    <a href="/books/{{ book['title'] }}/title"><img src ="{{ book['image_url'] }}"></a>
   </section>
+  
+    
+
+    
   {% endfor %}
 </section>
 {% else %}
-<a href="/users/new">Sign up</a>
-<a href="/sessions/new">Log in</a>
+<section class="home">
+  <a href="/users/new">Sign up</a>
+  <a href="/sessions/new">Log in</a>
+</section>
+
 {% endif %}
 
 {% endblock %}

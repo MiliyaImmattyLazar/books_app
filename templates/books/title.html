@@ -1,0 +1,35 @@
+
+
+
+  
+    <section class="controls2">
+      <a href="/books/{{ book['id'] }}/edit">Edit</a>
+  
+      <form action="/books/{{ book['id'] }}/delete" method="POST">
+        <button>Delete</button>
+   
+    </form>
+  </section>
+  <section class="book2">
+    <header><h2>{{ book['title'] }}</h2>
+        <img src ="{{ book['image_url'] }}">
+        <h2>Book Details</h2>
+<h3>Author : {{ book['author_name'] }}</h3>
+<h3>Published in : {{ book['published_year'] }}</h3>
+
+
+  
+    <h4>Share your thoughts about this book</h4>
+    <form action="/reviews/create_review/{{ book['title'] }}" METHOD="POST">
+      <h3>Wrie a review</h3>
+      
+      <input type="text" name="review">
+      <button>submit</button>
+      </form>
+      {% for review in reviews: %}
+  
+  
+     <h4> {{ review['review'] }}</h4>
+
+     {% endfor %}
+  
