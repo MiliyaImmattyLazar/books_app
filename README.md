@@ -1,9 +1,6 @@
 # Books Of Wonder
 
-## :computer: Click here to see my live project
-
-![alt text]https://books-of-wonder.onrender.com
-
+## :computer: [Click here](https://books-of-wonder.onrender.com) to see my live project
 
 ### :page_facing_up: About
 
@@ -11,6 +8,7 @@
 - You can add reviews about the book.
 
 ## :pencil2:Planning & Problem Solving
+![wireframe](wireframe.png)
 - Decided to do a books app after some research.
 - understood the concepts, but took some time and effort to understand how to implement the project.
 - Created wireframes for the project.
