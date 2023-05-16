@@ -6,7 +6,7 @@ def create_review(book_title):
     print(review)
     print(book_title)
     new_review(book_title,review)
-    return redirect('/books/book_title/title')
+    return redirect('/books')
   
 
     

@@ -7,18 +7,35 @@
     background-color: bisque;
     
   }
-/* .home{
-    display: inline flex;
-    align-items: right;
-  }  */
-  /* .home {
- justify-items: right;
- 
+  .login
+     {
+      
+      
+      
+    justify-content: center;
+      background-color:rgb(188, 86, 86);
+      color: white;
+      
+      padding: 14px 5px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 20%;
+    }
+    .login:hover{
+     
+        opacity: 0.8;
+      }
+    
+  
+
+  .home a{
+
   color: white;
   padding: 1em 1.5em;
   text-decoration: none;
   text-transform: uppercase;
-  } */
+  } 
   
   
    .books {
@@ -62,7 +79,19 @@
     align-items: end;
     border: 1px solid black;
     padding: 0.25rem 0.5rem;
-    background-color: #214F4B;
+    background-color:rgb(188, 86, 86);
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+
+  }  
+  .controls2 button,a{
+    
+    align-items: end;
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+    background-color:rgb(188, 86, 86);
     color: white;
     font-size: 0.8rem;
     text-decoration: none;

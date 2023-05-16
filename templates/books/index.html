@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Books app</h1>
+<h1>Books Of Wonder</h1>
 
 {% if current_user() %}
 <h3>Welcome to your favourite books app {{ current_user()['first_name'] }}</h3>
@@ -21,10 +21,6 @@
     </header>
     <a href="/books/{{ book['title'] }}/title"><img src ="{{ book['image_url'] }}"></a>
   </section>
-  
-    
-
-    
   {% endfor %}
 </section>
 {% else %}
